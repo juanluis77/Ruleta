@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=numeroCasillas\ tamanoMesa\ precioFichas\ numeroFichas
+comment0.target=Ruleta(int,\ int,\ int,\ int)
+comment1.params=
+comment1.target=int\ getPrecioFichas()
+comment2.params=
+comment2.target=int\ girar()
+numComments=3

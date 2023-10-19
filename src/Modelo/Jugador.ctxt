@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=nombre\ fichas
+comment0.target=Jugador(java.lang.String,\ int)
+comment1.params=
+comment1.target=int\ getFichas()
+comment2.params=fichas
+comment2.target=void\ setFichas(int)
+comment3.params=
+comment3.target=int\ comprarFichas()
+numComments=4
