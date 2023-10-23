@@ -32,7 +32,7 @@ public class JuegoRuleta {
         System.out.println("[1 4 7 10 13 16 19 22 25 28 31 34]");
     }
 
-    private void mostrarOpcionesApuestas(Jugador jugadorActual) {
+    public void mostrarOpcionesApuesta(Jugador jugadorActual) {
         System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
         System.out.println("Tablero:");
         System.out.println("0");
@@ -103,6 +103,5 @@ public class JuegoRuleta {
         // Implementación para mostrar los resultados después de girar la ruleta
     }
 
-    // ... otros métodos útiles ...
 }
 

@@ -2,8 +2,6 @@ package Vista;
 import Controlador.JuegoRuleta;
 import Modelo.Jugador;
 import java.util.Scanner;
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -26,7 +24,7 @@ public class Main {
             while (seguirApostando) {
                 System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
                 juego.mostrarTablero();
-                juego.mostrarOpcionesApuesta();
+                juego.mostrarOpcionesApuesta(jugadorActual);
                 System.out.println("crupier: elige una opcion, con la ficha en el tablero a quien y cuanto desea apostar?");
                 seguirApostando = juego.procesarApuesta(jugadorActual);
             }
