@@ -25,7 +25,6 @@ public class Main {
                 System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
                 juego.mostrarTablero();
                 juego.mostrarOpcionesApuesta(jugadorActual);
-                System.out.println("crupier: elige una opcion, con la ficha en el tablero a quien y cuanto desea apostar?");
                 seguirApostando = juego.procesarApuesta(jugadorActual);
             }
             seguirApostando = true; // Resetear la variable para el próximo jugador
