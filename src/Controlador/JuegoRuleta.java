@@ -23,17 +23,10 @@ public class JuegoRuleta {
         return jugadores;
     }
 
-// ... otras partes de la clase JuegoRuleta ...
 
-    public void mostrarTablero() {
-        System.out.println("0");
-        System.out.println("[3 6 9 12 15 18 21 24 27 30 33 36]");
-        System.out.println("[2 5 8 11 14 17 20 23 26 29 32 35]");
-        System.out.println("[1 4 7 10 13 16 19 22 25 28 31 34]");
-    }
 
     public void mostrarOpcionesApuesta(Jugador jugadorActual) {
-        System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
+       // System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
         System.out.println("Tablero:");
         System.out.println("0");
         System.out.println("[3 6 9 12 15 18 21 24 27 30 33 36]");

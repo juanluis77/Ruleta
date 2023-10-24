@@ -8,7 +8,7 @@ public class Jugador {
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        this.saldo = saldo;
+        this.saldo = 1;
 
     }
 
@@ -19,7 +19,9 @@ public class Jugador {
     public double getSaldo() {
         return saldo;
     }
-
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
     public void apostar(double monto) {
         this.saldo -= monto;
     }

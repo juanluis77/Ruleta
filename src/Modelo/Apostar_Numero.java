@@ -3,14 +3,18 @@ package Modelo;
 public class Apostar_Numero extends Apuesta {
     private int numeroApostado;
 
-    public Apostar_Numero(String tipo, String valor, int monto, int numeroApostado) {
-        super(tipo, valor, monto);
+    public Apostar_Numero(double monto, int numeroApostado) {
+        super(monto);
         this.numeroApostado = numeroApostado;
     }
 
     @Override
-    public int calcularGanancia() {
-        // Lógica para calcular ganancia según número apostado
-        return 0;
+    public double calcularGanancia() {
+        // Lógica para calcular ganancia al apostar por número.
+        return monto * 35; // Retorno de ejemplo.
+    }
+    public boolean ganado(int resultadoRuleta) {
+        return numeroApostado == resultadoRuleta;
     }
 }
+

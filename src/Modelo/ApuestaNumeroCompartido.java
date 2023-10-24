@@ -1,20 +1,23 @@
 package Modelo;
 
-import java.util.List;
-
 public class ApuestaNumeroCompartido extends Apuesta {
-    private List<Integer> numerosApostados;
-    private int cantidadNumeros;
+    private int primerNumero;
+    private int segundoNumero;
 
-    public ApuestaNumeroCompartido(String tipo, String valor, int monto, List<Integer> numerosApostados) {
-        super(tipo, valor, monto);
-        this.numerosApostados = numerosApostados;
-        this.cantidadNumeros = numerosApostados.size();
+    public ApuestaNumeroCompartido(double monto, int primerNumero, int segundoNumero) {
+        super(monto);
+        this.primerNumero = primerNumero;
+        this.segundoNumero = segundoNumero;
     }
 
     @Override
-    public int calcularGanancia() {
-        // Lógica para calcular ganancia según números apostados compartidos
-        return 0;
+    public double calcularGanancia() {
+        // Lógica para calcular ganancia al apostar por números compartidos.
+        return monto * 17;  // Suponiendo que la ganancia es 17 veces.
     }
+    @Override
+    public boolean ganado(int numeroGanador) {
+        return numeroGanador == primerNumero || numeroGanador == segundoNumero;
+    }
+
 }

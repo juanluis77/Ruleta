@@ -1,15 +1,19 @@
 package Modelo;
 
 public abstract class Apuesta {
-    protected String tipo;
-    protected String valor;
-    protected int monto;
-
-    public Apuesta(String tipo, String valor, int monto) {
-        this.tipo = tipo;
-        this.valor = valor;
+    protected double monto;
+    public Apuesta(double monto) {
         this.monto = monto;
     }
 
-    public abstract int calcularGanancia();
+    public double getMonto() {
+        return monto;
+    }
+
+    public void setMonto(double monto) {
+        this.monto = monto;
+    }
+
+    public abstract double calcularGanancia();
+    public abstract boolean ganado(int numeroResultado);
 }

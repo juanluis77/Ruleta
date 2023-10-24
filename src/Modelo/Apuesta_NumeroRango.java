@@ -1,18 +1,30 @@
 package Modelo;
 
 public class Apuesta_NumeroRango extends Apuesta {
-    private int rangoMinimo;
-    private int rangoMaximo;
+    private int inicioRango;
+    private int finRango;
 
-    public Apuesta_NumeroRango(String tipo, String valor, int monto, int rangoMinimo, int rangoMaximo) {
-        super(tipo, valor, monto);
-        this.rangoMinimo = rangoMinimo;
-        this.rangoMaximo = rangoMaximo;
+    public Apuesta_NumeroRango(double monto, int inicioRango, int finRango) {
+        super(monto);
+        this.inicioRango = inicioRango;
+        this.finRango = finRango;
+    }
+    // Métodos getter para obtener los valores del rango
+    public int getInicioRango() {
+        return inicioRango;
+    }
+
+    public int getFinRango() {
+        return finRango;
     }
 
     @Override
-    public int calcularGanancia() {
-        // Lógica para calcular ganancia según rango
-        return 0;
+    public double calcularGanancia() {
+        // Lógica para calcular ganancia al apostar por un rango.
+        return monto * 3;  // Suponiendo que la ganancia es triple.
+    }
+    @Override
+    public boolean ganado(int numeroGanador) {
+        return numeroGanador >= inicioRango && numeroGanador <= finRango;
     }
 }

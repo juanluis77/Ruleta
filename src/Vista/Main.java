@@ -23,7 +23,7 @@ public class Main {
         for (Jugador jugadorActual : juego.getJugadores()) {
             while (seguirApostando) {
                 System.out.println("Turno de jugador actual: " + jugadorActual.getNombre());
-                juego.mostrarTablero();
+               // juego.mostrarTablero();
                 juego.mostrarOpcionesApuesta(jugadorActual);
                 seguirApostando = juego.procesarApuesta(jugadorActual);
             }
