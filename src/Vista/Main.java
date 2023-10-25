@@ -42,7 +42,6 @@ public class Main {
         int resultado = ruleta.girar();  // Asumiendo que tienes una función en "juego" para girar la ruleta
         System.out.println("El resultado es: " + resultado);
 
-
         List<Jugador> ganadores = juego.verificarApuestas(resultado);
 
         System.out.println("Estadísticas del juego:");
